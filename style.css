@@ -1,0 +1,139 @@
+
+
+.container{
+    background-image: url("bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+display:grid;
+grid-template-columns: repeat(3 auto);
+grid-template-areas:
+"header header header"
+"main main sidebar"
+"footer footer footer";
+height: 100vh;
+width: 100%;
+}
+
+.header{
+    grid-area: header;
+    margin-top: 20px;
+}
+
+.main{ grid-area: main;
+padding-left: 30px;}
+
+.mock{width: 100%;}
+
+.sidebar{ grid-area: sidebar;
+padding-left: 20px;
+padding-top: 30px;
+padding-right: 30PX;}
+
+.huddy{text-align: left;
+font-size:  110%;
+color: white;}
+
+.build{width: 100%;
+text-align: left;
+font-size:180%;
+color: white;
+margin-top:-10px}
+
+
+.footer{grid-area: footer;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+margin-bottom: -10px;
+margin-top: 60px;
+height: 50px;
+margin-top:-05px;
+}
+
+
+.box{ width:25px;
+margin: 5px;}
+
+
+.face{ width: 100%;
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);}
+   
+   .face:hover{ filter: invert(58%) sepia(76%) saturate(1052%) hue-rotate(300deg) brightness(96%) contrast(78%);}
+
+
+.twit{ width:100%;
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);}
+
+   .twit:hover{ filter: invert(58%) sepia(76%) saturate(1052%) hue-rotate(300deg) brightness(96%) contrast(78%);}
+
+
+.insta{ width: 100%;
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);}
+
+   .insta:hover{ filter: invert(58%) sepia(76%) saturate(1052%) hue-rotate(300deg) brightness(96%) contrast(78%);}
+
+
+.button{
+   padding: 10px 40px;
+   border-radius: 25px;
+   background: white;
+   border: none;
+   color:  hsl(257, 40%, 49%);}
+   
+
+   .button:hover{ background: palevioletred;
+   color: white;}
+
+
+
+
+@media (max-width:375px){
+
+   .container{
+       background: url(bg-mobile.svg);
+       display:grid;
+       grid-template-columns: repeat(4 auto);
+       grid-template-areas:
+       "header header"
+       "main main"
+       "sidebar sidebar"
+       "footer footer";
+    background-color:hsl(257, 40%, 49%);}
+
+   .header{grid-area: header}
+   .main{grid-area: main;}
+
+   .sidebar{grid-area: sidebar}
+   .build{ font-size: 20px;
+   text-align: center;}
+
+
+   .button{margin-left:25%}
+
+   .huddy{font-size:18px;
+       text-align: center;
+       margin-top: 20px;
+       padding: 10px
+   }
+
+   .footer{grid-area: footer;
+   
+    justify-content: center;
+
+}
+.face{ width: 100%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);}
+    
+    .face:hover{ filter: invert(58%) sepia(76%) saturate(1052%) hue-rotate(300deg) brightness(96%) contrast(78%);}
+ 
+ 
+ .twit{ width:100%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);}
+ 
+    .twit:hover{ filter: invert(58%) sepia(76%) saturate(1052%) hue-rotate(300deg) brightness(96%) contrast(78%);}
+ 
+ 
+ .insta{ width: 100%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);}
+ 
+    .insta:hover{ filter: invert(58%) sepia(76%) saturate(1052%) hue-rotate(300deg) brightness(96%) contrast(78%);}
+}
